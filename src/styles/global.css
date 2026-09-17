@@ -1,11 +1,13 @@
 :root {
-  --ink: #27302e;
-  --muted: #6f7b75;
-  --paper: #f7f6f1;
-  --surface: #fffdf8;
-  --line: #dfe4dd;
-  --sage: #b9c9ba;
-  --rose: #db9b93;
+  --ink: #557283;
+  --muted: #8297a2;
+  --paper: #faf0ea;
+  --surface: #fff9f5;
+  --line: #ead5d5;
+  --sage: #bcd3df;
+  --rose: #e19aa6;
+  --sky: #82b0ce;
+  --sky-soft: #d9e7ee;
   --display: 'Playfair Display', Georgia, serif;
   --body: 'DM Sans', sans-serif;
   color: var(--ink);
@@ -37,7 +39,7 @@ h1 em { color: var(--rose); font-style: normal; }
 h2 { font-size: clamp(2rem, 5vw, 3.4rem); margin-bottom: 0; }
 h3 { font-family: var(--display); font-size: 1.5rem; font-weight: 500; margin-bottom: 8px; }
 .hero-text { color: var(--muted); line-height: 1.7; margin-bottom: 30px; }
-.button { display: inline-flex; align-items: center; gap: 12px; padding: 13px 18px; background: var(--ink); color: var(--paper); font-size: .85rem; transition: transform .2s ease, background .2s ease; }
+.button { display: inline-flex; align-items: center; gap: 12px; padding: 13px 18px; background: var(--sky); color: var(--surface); font-size: .85rem; transition: transform .2s ease, background .2s ease; }
 .button:hover { background: var(--rose); transform: translateY(-2px); }
 .hero-note { position: absolute; bottom: 38px; display: flex; align-items: center; gap: 14px; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; }
 .hero-note span:first-child { color: var(--rose); }
@@ -49,7 +51,7 @@ blockquote { font-family: var(--display); font-size: clamp(1.8rem, 4vw, 3rem); l
 .counter-placeholder strong { color: var(--rose); font-family: var(--display); font-size: 6rem; font-weight: 500; line-height: .8; }
 .counter-placeholder span { color: var(--muted); line-height: 1.5; }
 .memory-placeholder { display: grid; grid-template-columns: 1.1fr .9fr; gap: 55px; align-items: center; }
-.image-placeholder, .photo-placeholder, .portrait-placeholder { display: grid; place-items: center; background: linear-gradient(135deg, var(--sage), #e9e3d2); color: #4e6256; min-height: 260px; letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; text-align: center; }
+.image-placeholder, .photo-placeholder, .portrait-placeholder { display: grid; place-items: center; background: linear-gradient(135deg, var(--sky-soft), #f4dfe0); color: var(--ink); min-height: 260px; letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; text-align: center; }
 .memory-placeholder p, .profile-section p, .timeline p { color: var(--muted); line-height: 1.7; }
 .footer { width: min(1000px, calc(100% - 40px)); margin: auto; border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: .8rem; text-align: center; }
 .footer span { color: var(--rose); }
@@ -58,12 +60,12 @@ blockquote { font-family: var(--display); font-size: clamp(1.8rem, 4vw, 3rem); l
 .page-intro > p:last-child { color: var(--muted); line-height: 1.6; }
 .filter-row { width: min(1000px, calc(100% - 40px)); margin: 0 auto 28px; display: flex; gap: 8px; flex-wrap: wrap; }
 .filter { border: 1px solid var(--line); color: var(--muted); background: transparent; padding: 9px 13px; cursor: pointer; }
-.filter:hover, .filter.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.filter:hover, .filter.active { background: var(--sky-soft); border-color: var(--sky); color: var(--ink); }
 .gallery { width: min(1000px, calc(100% - 40px)); margin: 0 auto 120px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
 .photo-placeholder { min-height: 320px; }
-.photo-card:nth-child(2) .photo-placeholder { background: linear-gradient(135deg, #e4c4b8, #f1e1cc); }
-.photo-card:nth-child(3) .photo-placeholder { background: linear-gradient(135deg, #c8d6d1, #dfe5d8); }
-.photo-card:nth-child(4) .photo-placeholder { background: linear-gradient(135deg, #d7c5d0, #eee0da); }
+.photo-card:nth-child(2) .photo-placeholder { background: linear-gradient(135deg, #f0d4d7, #fae9df); }
+.photo-card:nth-child(3) .photo-placeholder { background: linear-gradient(135deg, #c8dfe9, #e8f0ed); }
+.photo-card:nth-child(4) .photo-placeholder { background: linear-gradient(135deg, #d8e5ed, #f0dfe3); }
 .photo-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-top: 13px; }
 .photo-caption h3 { margin: 0; font-size: 1.15rem; }
 .photo-caption p { color: var(--muted); font-size: .8rem; }
